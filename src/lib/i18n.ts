@@ -35,7 +35,7 @@ const getKey = (
   }
 
   return strs.reduce((acc, str, index) => {
-    const parameter = parameters[index] ? `{{${index}}}` : "";
+    const parameter = parameters[index] !== undefined && parameters[index] !== null ? `{{${index}}}` : "";
     return `${acc}${str}${parameter}`;
   }, '');
 };
