@@ -1,4 +1,4 @@
-import { __ } from "../../../lib/i18n";
+import { __ } from "@easy-i18n/core";
 
 const parameter1 = 'parameter1';
 const parameter2 = 'anotherParameter';

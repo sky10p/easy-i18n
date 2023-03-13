@@ -1,6 +1,6 @@
-import en  from "../../translations/en";
-import es from "../../translations/es";
-import { i18n, Language, __ } from "../../lib/i18n";
+import en  from "./translations/en";
+import es from "./translations/es";
+import { i18n, Language, __ } from "../lib/i18n";
 
 describe("i18n", () => {
   beforeAll(() => {

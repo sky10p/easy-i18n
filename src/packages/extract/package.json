@@ -1,0 +1,20 @@
+{
+  "name": "@easy-i18n/extract",
+  "version": "1.0.0",
+  "description": "Extract tool for easy-i18n",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "private": true,
+  "bin": {
+    "@easy-i18n/extract": "./bin/easy-i18n-extract.js"
+  },
+  "dependencies": {
+    "@easy-i18n/core": "^1.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test:dev": "jest"
+  },
+  "author": "Pablo Guijarro Ramírez",
+  "license": "ISC"
+}

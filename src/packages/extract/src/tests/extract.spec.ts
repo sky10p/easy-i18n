@@ -5,7 +5,7 @@ import {
   replaceParameters,
   searchInDirectory,
   searchInFile,
-} from "../../lib/extract";
+} from "../lib/extract";
 
 describe("extract should be worked", () => {
   describe("replaceParameters", () => {
@@ -110,7 +110,7 @@ describe("extract should be worked", () => {
 
     it("should return the keys from the translation in all  which is not in the compared translations", () => {
         const directory = `${__dirname}/fakeDirectoryExtract`;
-        const translationPath = path.join(__dirname, "..", "es.ts")
+        const translationPath = path.join(__dirname, "translations", "en.ts")
         const result = searchInDirectory(directory, translationPath);
   
         const expected: Record<string, string> = {

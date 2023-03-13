@@ -1,16 +1,19 @@
 {
   "name": "easy-i18n",
   "version": "1.0.0",
-  "description": "",
+  "description": "My i18n library",
   "main": "index.js",
+  "private": true,
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "start:dev": "ts-node-dev src/index.ts",
-    "start:extract": "ts-node-dev src/extract-command.ts",
+    "build": "tsc",
     "test:dev": "jest"
   },
-  "author": "",
+  "author": "Pablo Guijarro Ramírez",
   "license": "ISC",
+  "workspaces": [
+    "src/packages/core",
+    "src/packages/extract"
+  ],
   "devDependencies": {
     "@types/jest": "^29.4.0",
     "@types/node": "^18.14.6",

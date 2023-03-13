@@ -1,0 +1,1 @@
+export {searchInDirectory} from './lib/extract'

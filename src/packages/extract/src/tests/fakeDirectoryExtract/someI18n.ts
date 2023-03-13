@@ -1,4 +1,4 @@
-import { __ } from "../../../lib/i18n";
+import { __ } from "../../../../core/src/lib/i18n";
 
 const parameter = 'parameter1';
 const parameter2 = 'anotherParameter';
