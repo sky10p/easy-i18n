@@ -4,6 +4,10 @@
   "description": "Extract tool for easy-i18n",
   "main": "build/index.js",
   "types": "build/index.d.ts",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "dependencies": {
     "@easy-i18n/core": "^1.0.0"
   },
