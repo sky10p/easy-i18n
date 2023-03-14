@@ -6,7 +6,9 @@
   "private": true,
   "scripts": {
     "build": "yarn workspaces run build",
-    "test:dev": "yarn workspaces run test:dev"
+    "test:ci": "yarn workspaces run test:ci",
+    "test:dev": "yarn workspaces run test:dev",
+    "release": "yarn workspaces run release"
   },
   "author": "Pablo Guijarro Ramírez",
   "license": "ISC",

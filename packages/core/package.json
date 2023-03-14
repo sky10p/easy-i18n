@@ -4,10 +4,14 @@
   "description": "Core library for easy-i18n",
   "main": "build/index.js",
   "types": "build/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsc",
     "test:dev": "jest",
-    "release": "npx standard-version && npm publish"
+    "test:ci": "jest --coverage",
+    "release": "semantic-release"
   },
   "author": "Pablo Guijarro Ramírez",
   "license": "ISC"

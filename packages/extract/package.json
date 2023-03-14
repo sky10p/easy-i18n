@@ -11,8 +11,11 @@
   "bin": "./src/bin/extract-command.js",
   "scripts": {
     "build": "tsc",
+    "test:ci": "jest --coverage",
     "test:dev": "jest",
-    "extract": "ts-node-dev ./src/bin/extract-command.ts"
+    "extract": "ts-node-dev ./src/bin/extract-command.ts",
+    "release": "semantic-release"
+
   },
   "author": "Pablo Guijarro Ramírez",
   "license": "ISC"

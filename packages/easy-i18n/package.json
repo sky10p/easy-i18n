@@ -9,7 +9,10 @@
   },
   "scripts": {
     "build": "tsc",
-    "test:dev": ""
+    "test:ci": "jest --coverage",
+    "test:dev": "",
+    "release": "semantic-release"
+
   },
   "author": "Pablo Guijarro Ramírez",
   "license": "ISC"
