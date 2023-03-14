@@ -9,7 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NPM_TOKEN: ${{secrets.MY_NPM_TOKEN}}
-      GH_TOKEN: ${{ secrets.MY_GITHUB_MASTER_TOKEN }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -30,5 +29,8 @@ jobs:
         run: yarn test:dev
 
       - name: Generate release(changelog) and publish
+        env:
+          GH_TOKEN: ${{ secrets.MY_GITHUB_MASTER_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: yarn release
 
