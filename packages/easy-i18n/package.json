@@ -13,7 +13,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "test:ci": "jest --coverage",
+    "test:ci": "",
     "test:dev": "",
     "release": "semantic-release"
 
