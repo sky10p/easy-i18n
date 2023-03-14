@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "lib",
+    "declaration": true,
+    "declarationMap": true,
+    "composite": true,
+    "paths": {
+      "@easy-i18n/core": ["../core/src"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["**/*.spec.ts"]
+}

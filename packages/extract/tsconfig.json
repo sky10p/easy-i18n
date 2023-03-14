@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "lib",
+    "declaration": true,
+    "declarationMap": true,
+    "composite": true,
+    "esModuleInterop": true
+  },
+  "include": ["src", "bin"],
+  "references": [{ "path": "../core" }],
+  "exclude": ["**/*.test.ts"]
+}

@@ -5,14 +5,13 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "build": "tsc",
-    "test:dev": "jest"
+    "build": "yarn workspaces run build",
+    "test:dev": "yarn workspaces run test:dev"
   },
   "author": "Pablo Guijarro Ramírez",
   "license": "ISC",
   "workspaces": [
-    "src/packages/core",
-    "src/packages/extract"
+    "packages/*"
   ],
   "devDependencies": {
     "@types/jest": "^29.4.0",
