@@ -2,11 +2,11 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "rootDir": "src",
-    "outDir": "../../build/extract",
+    "outDir": "build",
     "declaration": true,
     "declarationMap": true,
     "composite": true,
-    "tsBuildInfoFile": "../../build/extract/.tsbuildinfo",
+    "tsBuildInfoFile": "build/extract/.tsbuildinfo",
     "esModuleInterop": true
   },
   "include": ["src", "bin"],

@@ -1,20 +1,37 @@
 export enum Language {
-  en = "en",
-  de = "de",
-  fr = "fr",
-  it = "it",
-  es = "es",
+  en = 'en',
+  es = 'es',
+  fr = 'fr',
+  it = 'it',
+  de = 'de',
+  pt = 'pt',
+  nl = 'nl',
+  ru = 'ru',
+  zh = 'zh',
+  ja = 'ja',
+  ko = 'ko',
+  ar = 'ar',
+  hi = 'hi',
+  bn = 'bn',
+  id = 'id',
+  tr = 'tr',
+  pl = 'pl',
+  uk = 'uk',
+  sv = 'sv',
+  no = 'no',
+  da = 'da'
 }
 export const ALLOWED_LANGUAGES: Language[] = Object.values(Language);
 
-export type TranslationsSource = Record<Language, Record<string, string>>;
+export type TranslationsSource = Record<Language | string, Record<string, string>>;
+export type TextParameter = string | number;
 
 const i18nFn = () => {
-  let language = Language.es;
+  let language: string = Language.es;
   let translations: TranslationsSource;
 
   return {
-    configure: (lang: Language, translationsSource?: TranslationsSource) => {
+    configure: (lang: Language | string, translationsSource?: TranslationsSource) => {
       language = lang;
       if (translationsSource) {
         translations = translationsSource;
@@ -28,7 +45,7 @@ export let i18n = i18nFn();
 
 const getKey = (
   strs: TemplateStringsArray,
-  parameters: string[]
+  parameters: TextParameter[]
 ): string => {
   if (parameters.length === 0) {
     return strs[0];
@@ -42,7 +59,7 @@ const getKey = (
 
 export const __ = (
   strs: TemplateStringsArray,
-  ...parameters: string[]
+  ...parameters: TextParameter[]
 ): string => {
   const translations = i18n.getTranslations();
   const key = getKey(strs, parameters);
@@ -53,7 +70,7 @@ export const __ = (
   let translation = translations ? translations[key] || key : key;
 
   for (let i = 0; i < parameters.length; i++) {
-    translation = translation.replace(`{{${i}}}`, parameters[i]);
+    translation = translation.replace(`{{${i}}}`, String(parameters[i]));
   }
 
   return translation;
