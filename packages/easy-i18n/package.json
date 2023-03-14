@@ -13,10 +13,9 @@
   },
   "scripts": {
     "build": "tsc",
-    "test:ci": "jest --coverage",
-    "test:dev": "",
+    "test:ci": "echo 'there is no tests'",
+    "test:dev": "echo 'there is no tests'",
     "release": "semantic-release"
-
   },
   "author": "Pablo Guijarro Ramírez",
   "license": "ISC"

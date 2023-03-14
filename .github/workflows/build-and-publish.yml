@@ -7,14 +7,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        packages:
-          - "core"
-          - "easy-i18n"
-          - "extract"
-          # Agrega aquí todos los paquetes que necesites construir y publicar
+    env:
+      NPM_TOKEN: ${{secrets.MY_NPM_TOKEN}}
 
     steps:
       - name: Checkout code
@@ -36,7 +30,5 @@ jobs:
         run: yarn test:dev
 
       - name: Generate release(changelog) and publish
-        env:
-          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
         run: yarn release
 
