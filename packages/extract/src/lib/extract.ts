@@ -28,6 +28,8 @@ export const getKeyFromTranslation = (translation: string): string => {
   return translation;
 };
 
+const ALLOWED_FILE_EXTENSIONS = [".js", ".jsx", ".ts", ".tsx"];
+
 export const getAllFilesRecursively = (dir: string): string[] => {
   const files = fs.readdirSync(dir);
 
@@ -37,7 +39,7 @@ export const getAllFilesRecursively = (dir: string): string[] => {
 
     if (fileStats.isDirectory()) {
       return getAllFilesRecursively(filePath);
-    } else if (fileStats.isFile() && path.extname(file) === ".ts") {
+    } else if (fileStats.isFile() && ALLOWED_FILE_EXTENSIONS.includes(path.extname(file))) {
       return [filePath];
     }
     return [];

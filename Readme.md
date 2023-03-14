@@ -75,12 +75,18 @@ const translatedTextWithParameters = __`The value of parameter1 is ${parameter1}
 
 ## Text Extraction
 
-To extract the texts to translate from your project, use the following command:
+To extract text for translation, use the npx @easy-i18n/extract command. By default, it will extract all translations in the current directory and its subdirectories. You can also specify a directory to search by providing it as an argument:
 
 ```bash
-npx easy-i18n-extract
+npx @easy-i18n/extract src/
 ```
 
-This command will look for all .ts nd .ts files in your project and extract the texts to translate using the __ function. The extracted texts will be saved in JSON files in the translations folder.
+This will extract all translations in the src directory and its subdirectories.
 
-And that's it! I hope this information is helpful to you when creating the easy-i18n README.md. If you have any additional questions, feel free to ask.
+You can also provide a path to a translation file as a second argument to only show new translations that are not yet in the file:
+
+```bash
+npx @easy-i18n/extract src/ translations/en.ts
+```
+
+This will extract all new translations in the src directory and its subdirectories, and show them in the console output. The new translations will not be added to the en.json file, but you can copy them manually if you want.
