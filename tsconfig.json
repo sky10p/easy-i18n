@@ -7,13 +7,15 @@
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "outDir": "./dist",
+    "rootDir": ".",
+    "outDir": "./build",
     "strict": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "paths": {
       "@easy-i18n/core": ["packages/core/src"],
-      "@easy-i18n/extract": ["packages/extract/src"]
+      "@easy-i18n/extract": ["packages/extract/src"],
+      "@easy-i18n/i18n": ["packages/extract/src"],
     }
   },
   "include": [
@@ -23,5 +25,5 @@
     "node_modules",
     "**/*.spec.ts",
   ],
-  "references": [{ "path": "packages/core" }, { "path": "packages/extract" }]
+  "references": [{ "path": "packages/core" }, { "path": "packages/extract" }, { "path": "packages/easy-i18n" }]
 }

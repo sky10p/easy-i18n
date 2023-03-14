@@ -2,13 +2,11 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "rootDir": "src",
-    "outDir": "lib",
+    "outDir": "../../build/core",
     "declaration": true,
     "declarationMap": true,
     "composite": true,
-    "paths": {
-      "@easy-i18n/core": ["../core/src"]
-    }
+    "tsBuildInfoFile": "../../build/core/.tsbuildinfo"
   },
   "include": ["src"],
   "exclude": ["**/*.spec.ts"]

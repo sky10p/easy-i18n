@@ -1,0 +1,20 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "baseUrl": ".",
+    "outDir": "../../build/easy-i18n",
+    "declaration": true,
+    "declarationMap": true,
+    "composite": true,
+    "tsBuildInfoFile": "../../build/easy-i18n/.tsbuildinfo",
+    "esModuleInterop": true,
+    "paths": {
+      "@easy-i18n/core": ["../core/src/index.ts"]
+    }
+  },
+  "include": ["src"],
+  "references": [{ "path": "../core" }],
+  "exclude": ["**/*.test.ts"],
+  
+}
