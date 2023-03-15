@@ -1,3 +1,15 @@
+# [@easy-i18n/core-v1.1.0](https://github.com/sky10p/easy-i18n/compare/@easy-i18n/core-v1.0.0...@easy-i18n/core-v1.1.0) (2023-03-15)
+
+
+### Bug Fixes
+
+* changed semantic-release for monorepo ([93d1096](https://github.com/sky10p/easy-i18n/commit/93d1096195432326974f11ddbea2f5c8a02e7d5b))
+
+
+### Features
+
+* make release as usual ([cb9600a](https://github.com/sky10p/easy-i18n/commit/cb9600a74f4f570d5943c0bd7a01d4e0053731cd))
+
 # [1.4.0](https://github.com/sky10p/easy-i18n/compare/v1.3.0...v1.4.0) (2023-03-15)
 
 
