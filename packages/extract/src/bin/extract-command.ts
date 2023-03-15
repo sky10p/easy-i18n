@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { searchInDirectory } from "../lib/extract";
 import path from 'path';
 

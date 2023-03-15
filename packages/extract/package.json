@@ -9,8 +9,9 @@
     "access": "public"
   },
   "dependencies": {
-    "@easy-i18n/core": "^1.0.0"
+    "@easy-i18n/core": "workspace:*"
   },
+  "preferGlobal": true,
   "bin": "./build/bin/extract-command.js",
   "scripts": {
     "build": "tsc",
