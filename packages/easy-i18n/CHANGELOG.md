@@ -1,3 +1,10 @@
+# [easy-i18n-ts-v1.2.0](https://github.com/sky10p/easy-i18n/compare/easy-i18n-ts-v1.1.0...easy-i18n-ts-v1.2.0) (2023-03-15)
+
+
+### Features
+
+* added Readme.md to packages and the info data to package.json ([c9c882e](https://github.com/sky10p/easy-i18n/commit/c9c882e1b01c30f1fd1ccad8daf32ee42eca2129))
+
 # [easy-i18n-ts-v1.1.0](https://github.com/sky10p/easy-i18n/compare/easy-i18n-ts-v1.0.0...easy-i18n-ts-v1.1.0) (2023-03-15)
 
 
