@@ -29,7 +29,9 @@ npm install @easy-i18n/core
 
 ## Configuration
 
-To configure easy-i18n, first create translation objects for the languages you want to support. For example, to create an English translation object, you can create a file called en.js in a translations folder with the following content:
+### File translations
+
+To configure easy-i18n for TypeScript, first create translation objects for the languages you want to support. For example, to create an English translation object, you can create a file called en.ts in a translations folder with the following content:
 
 ```typescript
 export default {
@@ -40,6 +42,22 @@ export default {
 };
 
 ```
+
+If you are using JavaScript instead of TypeScript, you would need to use a slightly different syntax:
+
+```javascript
+module.exports.default = {
+  "This is a text to translate": "This is a text to translate",
+  "The value of parameter1 is {{0}} and the value of parameter2 is {{1}}": "The value of parameter1 is {{0}} and the value of parameter2 is {{1}}",
+  "Hello": "Hello",
+  "Goodbye": "Goodbye"
+};
+
+```
+
+In this case, you would need to import the translation object using require instead of import.
+
+### Add translation to your code
 
 Then, import the translations for the languages you want to support, and use the configure method of i18n to specify the default language and the available translations:
 
@@ -75,18 +93,49 @@ const translatedTextWithParameters = __`The value of parameter1 is ${parameter1}
 
 ## Text Extraction
 
-To extract text for translation, use the npx @easy-i18n/extract command. By default, it will extract all translations in the current directory and its subdirectories. You can also specify a directory to search by providing it as an argument:
+To extract text for translation, you first need to install the @easy-i18n/extract package. You can do this using either npm or yarn.
+
+Using npm:
 
 ```bash
-npx @easy-i18n/extract src/
+npm install @easy-i18n/extract --save-dev
 ```
 
-This will extract all translations in the src directory and its subdirectories.
+Using yarn:
 
-You can also provide a path to a translation file as a second argument to only show new translations that are not yet in the file:
+```
+yarn add @easy-i18n/extract --dev
+```
+
+Both of these commands will install the package and add it to your project's devDependencies.
+
+Once the package is installed, you can use the easy-i18n-extract command to extract translations. There are two ways to run this command:
+
+1. By adding it to the scripts section of your package.json file:
+
+```json
+"scripts": {
+  "extract": "easy-i18n-extract"
+}
+```
+
+With this setup, you can run the command by running **npm run extract** or **yarn extract**, depending on your package manager. You can also pass in any additional arguments you need, such as the directory to search or the path to an existing translation file.
+
+2. By running it with npx:
+
+```css
+npx easy-i18n-extract [directory] [existing translation file path]
+
+```
+
+When running the command with npx, you can pass in the optional parameters directly. For example, to extract all translations in the "src" directory and its subdirectories, you can run:
+
+```css
+npx easy-i18n-extract src/
+```
+
+And to extract only new translations in the "src" directory and show them in the console output (without adding them to an existing translation file), you can run:
 
 ```bash
-npx @easy-i18n/extract src/ translations/en.ts
+npx easy-i18n-extract src/ translations/en.ts
 ```
-
-This will extract all new translations in the src directory and its subdirectories, and show them in the console output. The new translations will not be added to the en.json file, but you can copy them manually if you want.

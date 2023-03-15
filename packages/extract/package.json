@@ -13,7 +13,7 @@
   },
   "preferGlobal": true,
   "bin": {
-    "@easy-i18n/extract": "./build/bin/extract-command.js"},
+    "easy-i18n-extract": "./build/bin/extract-command.js"},
   "scripts": {
     "build": "tsc",
     "test:ci": "jest --coverage",
