@@ -125,5 +125,23 @@ describe("extract should be worked", () => {
   
         expect(result).toEqual(expected);
       });
+
+      it("should return the keys from the translation in all  which is not in the compared translations with exported strings", () => {
+        const directory = `${__dirname}/fakeDirectoryExtract`;
+        const translationPath = path.join(__dirname, "translations", "es.ts")
+        const result = searchInDirectory(directory, translationPath);
+  
+        const expected: Record<string, string> = {
+         
+          "This is another text in other file with {{0}} and {{1}}":
+            "This is another text in other file with {{0}} and {{1}}",
+          "This is a simple example": "This is a simple example",
+          "This is an example with {{0}}": "This is an example with {{0}}",
+          "This is an example with {{0}} and {{1}}":
+            "This is an example with {{0}} and {{1}}"
+        };
+  
+        expect(result).toEqual(expected);
+      });
   });
 });
