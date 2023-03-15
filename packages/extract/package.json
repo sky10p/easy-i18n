@@ -1,6 +1,6 @@
 {
   "name": "@easy-i18n/extract",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "description": "Extract tool for easy-i18n",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -13,7 +13,8 @@
   },
   "preferGlobal": true,
   "bin": {
-    "easy-i18n-extract": "./build/bin/extract-command.js"},
+    "easy-i18n-extract": "./build/bin/extract-command.js"
+  },
   "scripts": {
     "build": "tsc",
     "test:ci": "jest --coverage",
