@@ -11,7 +11,7 @@
   "dependencies": {
     "@easy-i18n/core": "^1.2.1"
   },
-    "scripts": {
+  "scripts": {
     "build": "tsc",
     "test:ci": "echo 'there is no tests'",
     "test:dev": "echo 'there is no tests'",
