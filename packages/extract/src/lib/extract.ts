@@ -62,20 +62,29 @@ export const searchInFile = (filePath: string): string[] => {
   return searchTranslations;
 };
 
+export const getTranslationContent = (filePath: string): string | undefined => {
+    try{
+   const fileContent = fs.readFileSync(filePath, 'utf-8')
+   return fileContent;
+    
+    }catch(err){
+      return undefined;
+    }
+}
+
 export const searchInDirectory = (
   directoryPath: string,
   compareFilePath?: string
 ): Record<string, string> => {
   const filesPath = getAllFilesRecursively(directoryPath);
-  const translations = compareFilePath ? require(compareFilePath).default : undefined;
-  const translationsKeys = translations ? Object.keys(translations) : undefined;
+  const translationsFile = compareFilePath ? getTranslationContent(compareFilePath) : undefined;
 
   return filesPath
     .flatMap((filePath) => {
       return searchInFile(filePath);
     })
     .reduce((acc, curr) => {
-      if(!translationsKeys || !translationsKeys.includes(curr)) {
+      if(!translationsFile || !translationsFile.includes(curr)) {
       acc[curr] = curr;
       }
       return acc;
