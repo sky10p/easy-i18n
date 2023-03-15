@@ -8,7 +8,7 @@
     "build": "yarn workspaces run build",
     "test:ci": "yarn workspaces run test:ci",
     "test:dev": "yarn workspaces run test:dev",
-    "release": "yarn workspaces run semantic-release -e semantic-release-monorepo"
+    "release": "yarn workspaces run release"
   },
   "author": "Pablo Guijarro Ramírez",
   "license": "ISC",
@@ -25,7 +25,6 @@
     "@types/node": "^18.14.6",
     "jest": "^29.5.0",
     "semantic-release": "^20.1.1",
-    "semantic-release-monorepo": "^7.0.5",
     "ts-jest": "^29.0.5",
     "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0"
