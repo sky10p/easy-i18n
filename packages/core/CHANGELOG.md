@@ -1,3 +1,11 @@
+# [1.4.0](https://github.com/sky10p/easy-i18n/compare/v1.3.0...v1.4.0) (2023-03-15)
+
+
+### Features
+
+* changed command for npx ([a7e9d8e](https://github.com/sky10p/easy-i18n/commit/a7e9d8e8cc31e0f10db3befa57494e0f30f872da))
+* changed Readme and solved extract ([e443810](https://github.com/sky10p/easy-i18n/commit/e443810a884d54703a2a45618633a937dfbf9ace))
+
 # [1.3.0](https://github.com/sky10p/easy-i18n/compare/v1.2.1...v1.3.0) (2023-03-15)
 
 
