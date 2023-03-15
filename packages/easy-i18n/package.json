@@ -9,7 +9,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@easy-i18n/core": "workspace:*"
+    "@easy-i18n/core": "^1.2.1"
   },
     "scripts": {
     "build": "tsc",
