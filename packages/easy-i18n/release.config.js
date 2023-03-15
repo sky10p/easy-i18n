@@ -1,10 +1,17 @@
 module.exports = {
-    branches: ['master'], // nombre de la rama de git donde se hace la publicación
-    plugins: [
-      '@semantic-release/commit-analyzer',
-      '@semantic-release/release-notes-generator',
-      '@semantic-release/npm',
-      '@semantic-release/changelog',
-      '@semantic-release/github',
-    ],
-  };
+  branches: ['master'],
+  plugins: [
+    '@semantic-release/commit-analyzer',
+    '@semantic-release/release-notes-generator',
+    ['@semantic-release/npm', {npmPublish: true}],
+    ['@semantic-release/changelog', {
+      changelogFile: "CHANGELOG.md"
+    }],
+    ['@semantic-release/git', {
+      assets: ["CHANGELOG.md", "package.json"],
+      message:
+        ":bookmark: Release ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}",
+    }],
+    '@semantic-release/github',
+  ],
+};
