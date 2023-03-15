@@ -1,3 +1,10 @@
+# [@easy-i18n/core-v1.1.1](https://github.com/sky10p/easy-i18n/compare/@easy-i18n/core-v1.1.0...@easy-i18n/core-v1.1.1) (2023-03-15)
+
+
+### Bug Fixes
+
+* test of release ([2e3e120](https://github.com/sky10p/easy-i18n/commit/2e3e120ae5dce7571006a24d9fc077afcf840610))
+
 # [@easy-i18n/core-v1.1.0](https://github.com/sky10p/easy-i18n/compare/@easy-i18n/core-v1.0.0...@easy-i18n/core-v1.1.0) (2023-03-15)
 
 
