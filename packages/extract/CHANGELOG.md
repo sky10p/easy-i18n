@@ -1,3 +1,10 @@
+# [@easy-i18n/extract-v1.3.0](https://github.com/sky10p/easy-i18n/compare/@easy-i18n/extract-v1.2.0...@easy-i18n/extract-v1.3.0) (2023-03-15)
+
+
+### Features
+
+* solved problem with import ([3efdad6](https://github.com/sky10p/easy-i18n/commit/3efdad606a830618c75527f00d601fe0471bbf48))
+
 # [@easy-i18n/extract-v1.2.0](https://github.com/sky10p/easy-i18n/compare/@easy-i18n/extract-v1.1.0...@easy-i18n/extract-v1.2.0) (2023-03-15)
 
 
