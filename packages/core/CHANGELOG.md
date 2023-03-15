@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/sky10p/easy-i18n/compare/v1.2.1...v1.3.0) (2023-03-15)
+
+
+### Bug Fixes
+
+* extract package solving ([115d837](https://github.com/sky10p/easy-i18n/commit/115d8373f2f842e62b1453bb3da101f97c2368c0))
+
+
+### Features
+
+* make release as usual ([cb9600a](https://github.com/sky10p/easy-i18n/commit/cb9600a74f4f570d5943c0bd7a01d4e0053731cd))
+
 # @easy-i18n/core-v1.0.0 (2023-03-15)
 
 
