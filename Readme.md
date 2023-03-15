@@ -18,7 +18,7 @@ Easy-i18n is a simple library that enables you to add internationalization (i18n
 To install easy-i18n in your project, simply run:
 
 ```bash
-npm install easy-i18n
+npm install easy-i18n-ts
 ```
 
 If you only want to install the core of the library, you can run:

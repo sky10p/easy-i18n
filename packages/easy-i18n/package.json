@@ -1,5 +1,5 @@
 {
-  "name": "easy-i18n",
+  "name": "easy-i18n-ts",
   "version": "1.0.0",
   "description": "Extract tool for easy-i18n",
   "main": "build/index.js",
@@ -11,8 +11,7 @@
   "dependencies": {
     "@easy-i18n/core": "^1.0.0"
   },
-  "private": true,
-  "scripts": {
+    "scripts": {
     "build": "tsc",
     "test:ci": "echo 'there is no tests'",
     "test:dev": "echo 'there is no tests'",
