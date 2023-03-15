@@ -4,10 +4,13 @@
   "description": "My i18n library",
   "main": "index.js",
   "private": true,
+  "repository": "https://github.com/sky10p/easy-i18n",
+  "homepage": "https://github.com/sky10p/easy-i18n#readme",
   "scripts": {
     "build": "yarn workspaces run build",
     "test:ci": "yarn workspaces run test:ci",
     "test:dev": "yarn workspaces run test:dev",
+    "doc:packages": "cp Readme.md packages/core packages/extract packages/easy-i18n",
     "release": "yarn workspaces run semantic-release -e semantic-release-monorepo"
   },
   "author": "Pablo Guijarro Ramírez",

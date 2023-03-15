@@ -4,6 +4,8 @@
   "description": "Core library for easy-i18n",
   "main": "build/index.js",
   "types": "build/index.d.ts",
+  "repository": "https://github.com/sky10p/easy-i18n",
+  "homepage": "https://github.com/sky10p/easy-i18n#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
