@@ -1,6 +1,6 @@
 {
   "name": "@easy-i18n/extract",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Extract tool for easy-i18n",
   "main": "build/index.js",
   "types": "build/index.d.ts",

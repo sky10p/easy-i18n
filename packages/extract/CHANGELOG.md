@@ -1,3 +1,10 @@
+# [@easy-i18n/extract-v1.1.0](https://github.com/sky10p/easy-i18n/compare/@easy-i18n/extract-v1.0.2...@easy-i18n/extract-v1.1.0) (2023-03-15)
+
+
+### Features
+
+* changed version extract ([108017e](https://github.com/sky10p/easy-i18n/commit/108017e2df75a381401f211b76c16160be5a8733))
+
 # @easy-i18n/extract-v1.0.0 (2023-03-15)
 
 
