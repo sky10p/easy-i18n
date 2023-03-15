@@ -12,7 +12,7 @@
     "build": "tsc",
     "test:dev": "jest",
     "test:ci": "jest --coverage",
-    "release": "semantic-release"
+    "release": "semantic-release -e semantic-release-monorepo"
   },
   "author": "Pablo Guijarro Ramírez",
   "license": "ISC"

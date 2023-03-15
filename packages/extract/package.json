@@ -19,7 +19,7 @@
     "test:ci": "jest --coverage",
     "test:dev": "jest",
     "extract": "ts-node-dev ./src/bin/extract-command.ts",
-    "release": "semantic-release"
+    "release": "semantic-release -e semantic-release-monorepo"
   },
   "author": "Pablo Guijarro Ramírez",
   "license": "ISC"

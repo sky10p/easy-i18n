@@ -15,7 +15,7 @@
     "build": "tsc",
     "test:ci": "echo 'there is no tests'",
     "test:dev": "echo 'there is no tests'",
-    "release": "semantic-release"
+    "release": "semantic-release -e semantic-release-monorepo"
   },
   "author": "Pablo Guijarro Ramírez",
   "license": "ISC"
